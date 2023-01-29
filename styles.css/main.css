@@ -1,0 +1,84 @@
+.profiles {
+    display: flex;
+    background-color: var(--cinza-claro-fundos);
+    margin-top: 1em;
+}
+
+.profiles-img {
+    padding: 2em 1em;
+}
+
+.profile-info {
+    padding: 2em 1em;
+}
+
+.profiles-nome {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-de-fundo-inicial);
+    margin-bottom: .5em;
+}
+
+.profiles-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza);
+    margin-bottom: 1.8em;
+}
+
+.profiles-location {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cinza);
+    margin-bottom: 0.5em;
+}
+
+
+.contato-link {
+    display: flex;
+    gap: 1em;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--cinza);
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .cp-profiles {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1em;
+        padding: 0 2em;
+    }
+
+    .profile-info {
+        padding: 2em 0;
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background: url(../images/Forma\ 2.svg) no-repeat, #FFFFFF;
+        background-position: right 78%, 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profiles {
+        width: 24em;
+    }
+
+    .cp-profiles {
+        grid-template-columns: auto auto auto;
+        gap: 0;
+        padding: 0 8em;
+    }
+
+
+}
